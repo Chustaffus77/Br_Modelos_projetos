@@ -8,6 +8,22 @@ alter table veiculo rename to carro;
 
 alter table carro add color varchar(20) not null after modelo;
 
-alter table drop color;
+ insert into carro values (100, 'VW','Gol','cor','ABC1234');
+ 
+ insert into carro values (101, 'Fiat','Marea Turbo','azul','ABC1235');
 
-a
+ insert into carro values (102, 'VW','Fusca','amarelo','ABC1236');
+
+ insert into carro values (103, 'Ford','Ka','vermelho','ABC1237');
+
+ insert into carro values (104, 'Honda','Civic','cinza','ABC1238');
+
+ update carro set nome_modelo = 'Ka Sedan' where idVeiculo = 103;
+
+ update carro set nome_modelo = 'polo', placa ='1340' where idVeiculo = 100;
+
+ update carro set fabricante = 'volkswagen' where idVeiculo = 100;
+
+ update carro set fabricante = 'volkswagen' where idVeiculo = 102;
+  
+ delete from carro where idVeiculo = 102;
