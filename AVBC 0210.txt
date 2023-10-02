@@ -1,0 +1,23 @@
+Avaliação - Banco de Dados;                                                                                                                    I
+                                                                                                                                               I
+Aluno: Gustavo Baptista de Oliveira Carvalho;												       I
+																	       I
+Rio, 02 de Outubro de 2023;													               I
+																	       I
+_______________________________________________________________________________________________________________________________________________I
+
+
+Questão 2.
+
+create table medico (crm int primary key auto_increment, nome varchar(50) not null, especialidadevarchar(30));
+
+
+
+
+
+Questão 5.
+
+select candidato.numerocandidato, candidato.nome, partidopolitico.sigla, partidopolitico.nome from candidato, partidopolitico where candidato.fk_partidopolitico_sigla = partidopolitico.sigla;
+
+
+
